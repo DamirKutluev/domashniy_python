@@ -200,7 +200,7 @@ def start():
         elif num == "3":
             break
         else:
-            print("Такого выбора нет!")
+            print("Такого выбора из предложенного нет!")
 
 
 start()
