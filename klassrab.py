@@ -1,7 +1,8 @@
 from flask import Flask
-app =Flask(__name__)
+
+app = Flask(__name__)
 
 
-@app.get('/')
+@app.get("/")
 def hello():
     return {"hello": "world!"}
