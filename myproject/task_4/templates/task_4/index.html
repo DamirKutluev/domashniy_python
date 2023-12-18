@@ -1,0 +1,29 @@
+{% extends 'task_4/block.html' %}
+
+{% block table %}
+<style>
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        text-align: center;
+        border: 2px solid #ddd;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+</style>
+
+<table style="border: 2px solid black, margin: 5px">
+    {% for i in data %}
+        <tr style="border: 2px solid black, margin: 5px">
+            {% for j in i %}
+                <td style="border: 2px solid black, margin: 5px">{{ j }}</td>
+            {% endfor %}
+        </tr>
+    {% endfor %}
+</table>
+{% endblock %}
